@@ -15,22 +15,8 @@ jobs:
       - checkout
 
       - run:
-          name: Global Config
-          command: |
-            mkdir ~/.yarn-cache;
-            yarn config set cache-folder ~/.yarn-cache;
-
-      - restore_cache:
-          key: yarn-cache-{{ checksum "yarn.lock" }}
-
-      - run:
           name: Install Dependencies
-          command: yarn install --pure-lockfile
-
-      - save_cache:
-          key: yarn-cache-{{ checksum "yarn.lock" }}
-          paths:
-            - .yarn-cache
+          command: yarn install
 
       - run:
           name: Building

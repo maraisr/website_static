@@ -35,7 +35,7 @@ export default function(selectors: NodeList) {
 						Tracking.track('Nav', 'click', clickTo);
 
 						return false;
-					})
+				  })
 				: void 0
 	);
 }
