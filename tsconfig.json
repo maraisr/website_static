@@ -1,17 +1,12 @@
 {
-	"compileOnSave": true,
-	"compilerOptions": {
-		"module": "es2015",
-		"target": "es5",
-		"experimentalDecorators": false,
-		"emitDecoratorMetadata": false,
-		"allowSyntheticDefaultImports": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitAny": true,
-		"removeComments": true,
-		"sourceMap": true,
-		"lib": ["dom", "es2017"],
-		"outDir": "tmp/"
-	},
-	"files": ["./src/assets/js/defs/interfaces.d.ts", "./src/assets/js/main.ts"]
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "outDir": "./dist",
+        "jsx": "react",
+        "jsxFactory": "h"
+    } ,
+    "include": [
+        "./pages/**/*"
+    ]
 }

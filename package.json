@@ -1,22 +1,14 @@
 {
   "name": "website",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "My personal website",
   "private": true,
-  "config": {
-    "loc": "Australia/Brisbane",
-    "domain": "https://marais.io/"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "lint": "prettier --write '{*,{src,config}/**/*}.+(ts|js|scss|css|json|md)'",
-    "build": "gulp clean; cross-env NODE_ENV=production gulp fingerprint",
-    "deploy": "cross-env NODE_ENV=production gulp publish",
-    "start": "gulp serve"
+    "format": "prettier --write '**/*.+(ts|js|json|md)'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maraisr/website.git"
+    "url": "https://github.com/maraisr/website"
   },
   "author": "Marais Rossouw <me@maraisr.com>",
   "license": "MIT",
@@ -24,60 +16,12 @@
     "url": "https://github.com/maraisr/website/issues"
   },
   "homepage": "https://github.com/maraisr/website#readme",
-  "dependencies": {
-    "normalize-scss": "7.0.1",
-    "raven-js": "3.26.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "10.5.5",
-    "autoprefixer": "9.0.2",
-    "awesome-typescript-loader": "5.2.0",
-    "concurrent-transform": "1.0.0",
-    "cross-env": "5.2.0",
-    "css-mqpacker": "7.0.0",
-    "cssnano": "4.0.5",
-    "cssortie": "0.0.1",
-    "google-closure-compiler-js": "20180610.0.0",
-    "gulp": "3.9.1",
-    "gulp-awspublish": "3.3.3",
-    "gulp-cli": "2.0.1",
-    "gulp-connect": "5.5.0",
-    "gulp-mustache": "3.0.1",
-    "gulp-notify": "3.2.0",
-    "gulp-plumber": "1.2.0",
-    "gulp-postcss": "7.0.1",
-    "gulp-posthtml": "3.0.4",
-    "gulp-pretty-data": "0.2.0",
-    "gulp-pug": "4.0.1",
-    "gulp-rev-all": "0.9.8",
-    "gulp-sass": "4.0.1",
-    "gulp-sass-bulk-import": "1.0.1",
-    "gulp-sourcemaps": "2.6.4",
-    "gulp-util": "3.0.8",
-    "lodash": "4.17.10",
-    "lost": "8.3.0",
-    "mkdirp": "0.5.1",
-    "moment-timezone": "0.5.21",
-    "mustache": "2.3.0",
-    "node-sass": "4.9.2",
-    "postcss": "7.0.2",
-    "postcss-position": "1.0.0",
-    "postcss-pxtorem": "4.0.1",
-    "postcss-sorting": "4.0.0",
-    "posthtml-json": "0.1.0",
-    "posthtml-minifier": "0.1.0",
-    "posthtml-obfuscate": "0.1.5",
-    "posthtml-schemas": "1.0.0",
-    "prettier": "1.14.0",
-    "pug-html-loader": "1.1.5",
-    "rimraf": "2.6.2",
-    "sass-module-importer": "1.4.0",
-    "source-map-loader": "0.2.3",
-    "svelte": "2.9.7",
-    "svelte-loader": "2.10.0",
-    "typescript": "3.0.1",
-    "uglifyjs-webpack-plugin": "1.2.7",
-    "webpack": "4.16.3",
-    "wrapper-webpack-plugin": "2.0.0"
+    "typescript": "^3.8.3"
+  },
+  "volta": {
+    "node": "9.11.2",
+    "yarn": "1.21.1"
   }
 }
