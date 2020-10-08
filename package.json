@@ -1,27 +1,54 @@
 {
   "name": "website",
   "version": "3.0.0",
-  "description": "My personal website",
   "private": true,
-  "scripts": {
-    "format": "prettier --write '**/*.+(ts|js|json|md)'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maraisr/website"
-  },
-  "author": "Marais Rossouw <me@maraisr.com>",
+  "description": "My personal website",
+  "repository": "mariasr/meros",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/maraisr/website/issues"
+  "author": {
+    "name": "Marais Rossouw",
+    "email": "hi@marais.io",
+    "url": "https://marais.io"
   },
-  "homepage": "https://github.com/maraisr/website#readme",
-  "dependencies": {},
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "format": "prettier --write '**/*.+(ts|js|json|md)'",
+    "start": "sirv public -p 8080",
+    "validate": "svelte-check"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "proseWrap": "always",
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": true
+  },
+  "dependencies": {
+    "treat": "^1.5.1"
+  },
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "@marais/tsconfig": "^0.0.1",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "rollup-plugin-treat": "0.0.1-alpha.2",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.0.0",
+    "@rollup/plugin-html": "^0.2.0",
+    "svelte-check": "^0.1.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3"
   },
   "volta": {
-    "node": "9.11.2",
-    "yarn": "1.21.1"
+    "node": "14.6.0",
+    "yarn": "1.22.4"
   }
 }

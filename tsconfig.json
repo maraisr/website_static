@@ -1,12 +1,17 @@
 {
-    "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
-        "outDir": "./dist",
-        "jsx": "react",
-        "jsxFactory": "h"
-    } ,
-    "include": [
-        "./pages/**/*"
-    ]
+	"extends": "@marais/tsconfig",
+	"compilerOptions": {
+		"target": "esnext",
+		"types": ["svelte"],
+		"lib": [
+			"DOM",
+			"ESNext"
+		]
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
 }

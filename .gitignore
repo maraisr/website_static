@@ -1,10 +1,16 @@
-*.log*
+node_modules
+.DS_Store
+*-lock.*
+*.lock
+*.log
 
-node_modules/
-dist/
-tmp/
+/public
 
-s3config.json
+# Yarn
+.yarn/
+/.pnp*
 
-.idea/
-.vscode/
+# Editors
+*.iml
+/.idea
+/.vscode
