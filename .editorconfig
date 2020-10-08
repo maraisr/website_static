@@ -1,17 +1,14 @@
 root = true
 
 [*]
+charset = utf-8
+end_of_line = lf
 indent_style = tab
 indent_size = 4
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
 insert_final_newline = true
-
-[*.yml]
 trim_trailing_whitespace = true
 
-[{package.json,circle.yml}]
+# We need to leave this so subsequent yarn installs don't cause a conflict.
+[{package.json, *.yml}]
 indent_style = space
 indent_size = 2
-insert_final_newline = true

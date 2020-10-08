@@ -1,17 +1,17 @@
 {
-	"compileOnSave": true,
+	"extends": "@marais/tsconfig",
 	"compilerOptions": {
-		"module": "es2015",
-		"target": "es5",
-		"experimentalDecorators": false,
-		"emitDecoratorMetadata": false,
-		"allowSyntheticDefaultImports": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitAny": true,
-		"removeComments": true,
-		"sourceMap": true,
-		"lib": ["dom", "es2017"],
-		"outDir": "tmp/"
+		"target": "esnext",
+		"types": ["svelte"],
+		"lib": [
+			"DOM",
+			"ESNext"
+		]
 	},
-	"files": ["./src/assets/js/defs/interfaces.d.ts", "./src/assets/js/main.ts"]
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
 }

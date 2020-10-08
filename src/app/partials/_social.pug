@@ -1,7 +1,0 @@
-ul.social
-	for social in FRESH.social
-		li
-			a(href=social.url, target="_blank")
-				span=social.label
-				+icon(social.label, social.network.toLowerCase())
-				span.handle /#{social.user}
