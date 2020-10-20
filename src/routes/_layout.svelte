@@ -1,0 +1,6 @@
+<div>
+
+	test
+
+	<slot />
+</div>
