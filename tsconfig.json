@@ -8,6 +8,8 @@
 		],
 		"strict": true,
 		"isolatedModules": true,
+		"sourceMap": false,
+		"noImplicitAny": false,
 		"jsx": "preserve"
 	},
 	"include": [

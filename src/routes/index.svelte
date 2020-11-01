@@ -1,6 +1,11 @@
-<script>
-	export let name = 'world'
+<script lang="ts">
+	const thing = 'test';
 </script>
 
-hello {name}
+<svelte:head>
+	<title>im home</title>
+</svelte:head>
 
+<p>hello {thing}</p>
+
+<a href="/test">link thing</a>

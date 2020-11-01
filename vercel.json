@@ -1,5 +1,7 @@
 {
-	"name": "website",
 	"version": 2,
-	"alias": ["marais.io"]
+	"public": false,
+	"cleanUrls": true,
+	"trailingSlash": false,
+	"alias": ["marais.io", "marais.dev", "marais"]
 }
