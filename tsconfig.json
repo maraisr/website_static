@@ -6,10 +6,9 @@
 			"DOM",
 			"ESNext"
 		],
-		"strict": true,
+		"strict": false,
 		"isolatedModules": true,
 		"sourceMap": false,
-		"noImplicitAny": false,
 		"jsx": "preserve"
 	},
 	"include": [

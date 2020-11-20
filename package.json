@@ -24,24 +24,22 @@
     "trailingComma": "all",
     "useTabs": true
   },
-  "dependencies": {
-    "@rollup/plugin-typescript": "^6.1.0"
-  },
   "devDependencies": {
-    "@freshie/plugin.typescript": "^0.0.3",
-    "@freshie/ssr.node": "0.0.1",
-    "@freshie/ui.svelte": "0.0.1",
+    "@freshie/plugin.postcss": "0.0.5",
+    "@freshie/plugin.typescript": "0.0.3",
+    "@freshie/ssr.node": "0.0.5",
+    "@freshie/ui.svelte": "0.0.5",
     "@marais/tsconfig": "0.0.1",
-    "freshie": "0.0.2",
+    "freshie": "0.0.5",
+    "postcss": "7.0.35",
     "prettier": "^2.1.2",
     "prettier-plugin-svelte": "^1.4.1",
-    "svelte": "3.29.4",
-    "svelte-preprocess": "4.5.2",
-    "tslib": "2.0.3",
-    "vercel": "20.1.2"
+    "svelte": "3.29.7",
+    "svelte-preprocess": "4.6.0",
+    "tslib": "2.0.3"
   },
   "volta": {
-    "node": "15.0.1",
+    "node": "15.2.1",
     "yarn": "1.22.5"
   }
 }
